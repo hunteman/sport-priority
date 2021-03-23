@@ -1,6 +1,6 @@
-## sport-priority
+# sport-priority
 
-#*Getting Started*
+*##Getting Started*
 
  npm install
  
