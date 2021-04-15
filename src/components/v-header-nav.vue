@@ -1,5 +1,5 @@
 <template>
-    <div class="v__header__nav">
+    <div class="v__header__nav" v-bind:class="{open__menu: isShow}">
         <div class="v__header__nav__areas__item__link__wrap">
             <a href="javascript: void(0)" class="v__header__nav__areas__item__link">
                 <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" class="v__header__nav__areas__icon">
@@ -37,7 +37,6 @@ export default {
     },
     methods: {
         toggleShowMenu() {
-            document.querySelector('.v__header__nav').classList.toggle('open__menu');
             this.isShow = !this.isShow;
         }
     }
